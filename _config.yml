@@ -1,0 +1,11 @@
+title: Rijk van Zanten
+email: vanzr998@newschool.edu
+description: >-
+  My assignments for the classes MPS CS at Parsons!
+baseurl: "/"
+url: "https://rijkvanzanten.github.io"
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+include: ["_pages"]
