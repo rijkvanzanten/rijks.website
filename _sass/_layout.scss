@@ -1,15 +1,21 @@
-body {
+.wrapper {
   display: flex;
   padding: 5rem 20rem;
+  max-width: 1020px;
+  margin: 0 auto;
 }
 
 #sidebar {
   position: sticky;
+  position: -webkit-sticky;
   top: 0;
-  padding-right: 2rem;
-  border-right: 1px dashed $blue
+  padding-left: 2rem;
+  border-left: 1px dashed $blue;
+  flex-basis: 15rem;
+  width: 15rem;
 }
 
 #content {
-  padding-left: 2rem;
+  padding-right: 2rem;
+  flex-grow: 1;
 }
