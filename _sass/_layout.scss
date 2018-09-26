@@ -13,6 +13,7 @@
   border-left: 1px dashed $blue;
   flex-basis: 15rem;
   width: 15rem;
+  flex-shrink: 0;
 }
 
 #content {
