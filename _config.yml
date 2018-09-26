@@ -8,4 +8,7 @@ markdown: kramdown
 kramdown:
   input: GFM
   hard_wrap: false
-include: ["_pages"]
+collections:
+  pages:
+    output: true
+    permalink: /:path
