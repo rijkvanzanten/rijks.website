@@ -1,12 +1,14 @@
 <div id="sidebar">
-  <a href="/">
-    <img src="/assets/img/rijk.png" alt="Rijk van Zanten" />
-  </a>
-  <nav>
-    <ul>
-      {% for item in site.data.nav.links %}
-      <li><a href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a></li>
-      {% endfor %}
-    </ul>
-  </nav>
+  <div class="sticky-wrapper">
+    <a href="/">
+      <img src="/assets/img/rijk.png" alt="Rijk van Zanten" />
+    </a>
+    <nav>
+      <ul>
+        {% for item in site.data.nav.links %}
+        <li><a href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
 </div>
