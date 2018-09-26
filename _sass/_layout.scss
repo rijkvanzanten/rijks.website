@@ -1,0 +1,15 @@
+body {
+  display: flex;
+  padding: 5rem 20rem;
+}
+
+#sidebar {
+  position: sticky;
+  top: 0;
+  padding-right: 2rem;
+  border-right: 1px dashed $blue
+}
+
+#content {
+  padding-left: 2rem;
+}
