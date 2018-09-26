@@ -1,1 +1,1 @@
-# rijkvanzanten.github.io
+# rijks.website
