@@ -5,8 +5,7 @@
 }
 
 html {
-  font-size: 10px;
-
+  font-size: 12px;
   @media (min-width: 500px) { font-size: 14px }
   @media (min-width: 700px) { font-size: 16px }
   @media (min-width: 900px) { font-size: 18px }
@@ -15,4 +14,8 @@ html {
 body {
   background-color: $dark-blue;
   color: $white;
+}
+
+img {
+  max-width: 100%;
 }
