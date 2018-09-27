@@ -1,19 +1,18 @@
 .wrapper {
   display: flex;
-  padding: 5rem 20rem;
-  max-width: 1020px;
-  margin: 0 auto;
+  padding: 3rem 4rem;
+}
+
+#content {
+  padding-right: 2rem;
+  padding-top: 2rem;
+  overflow: hidden;
+  flex-grow: 1;
 }
 
 #sidebar {
   padding-left: 2rem;
   border-left: 1px dashed $blue;
-  flex-basis: 15rem;
-  width: 15rem;
+  flex-basis: 20vw;
   flex-shrink: 0;
-}
-
-#content {
-  padding-right: 2rem;
-  flex-grow: 1;
 }
