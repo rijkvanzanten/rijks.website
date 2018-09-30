@@ -202,7 +202,7 @@ This could be an alternative way to open the same interface as above.
 
 #### Conclusion
 
-I think I should focus on creating one interface that can be re-used in all the different ideas seen above. The Apple Calendar "Quick Event" interface could be a good starting point. 
+I think I should focus on creating one interface that can be re-used in all the different ideas seen above. The Apple Calendar "Quick Event" interface could be a good starting point.
 
 ## Sources
 
