@@ -17,11 +17,11 @@ body {
   color: $white;
 }
 
-img {
+img, video {
   max-width: 100%;
 }
 
-#content img {
+#content img, #content video {
   padding: .6rem;
   border: 1px dashed $white;
   margin-top: 1.4rem;

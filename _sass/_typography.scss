@@ -73,6 +73,17 @@ a {
   color: currentColor;
 }
 
+a[href$=".sketch"]::after {
+  content: "";
+  background-image: url('data:image/svg+xml;utf7,<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="%23F8FCFF" stroke-linecap="round" stroke-linejoin="round"><path d="M.5 8.5h23L12 22.5.5 8.5z"/><path d="M.5 8.5L5 2l-.5 6.5 7.5 14 7.5-14L19 2l4.5 6.5M5 2l7-.5 7 .5"/><path d="M4.5 8.5l7.5-7 7.5 7"/></g></svg>');
+  background-size: cover;
+  width: .8rem;
+  height: .8rem;
+  margin-left: .2rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .footnotes li:target {
   position: relative;
 

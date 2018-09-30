@@ -4,9 +4,17 @@ layout: page
 
 # Project 1
 
-> Add a feature onto an app
+> "Add a feature onto an app"
 
-I'm researching and designing a new integration between email clients and calendars. I'm trying to solve the problem of double bookings at certain time and dates.
+For this project, I'm tasked with designing a new integration between an email client and a calendar app to make scheduling meetings easier.
+
+Seeing that we're using way more channels than just email to plan meetings nowadays, I'll try to come up with a solution that will work with other forms of communication as well (for example Slack, WhatsApp, or Telegram).
+
+The calendar app I'll use as base is Apple's Calendar app:
+
+![Apple Calendar](/assets/major-studio-1/apple-calendar.png)
+
+I've chosen Apple's calendar because it's a very barebones calendar application and shares the same core layout as Google's and Microsoft's offerings, without all the additional options.
 
 ## Design Brief
 
@@ -26,11 +34,30 @@ The flow of booking a meeting often happens in one of two ways:
 1. The user goes back and forth between email & calendar client
 
 ![Problem flow visualized](/assets/major-studio-1/problem-flow.png)
-*[Full size](/assets/major-studio-1/problem-flow.png) • [Sketch version](/assets/major-studio-1/problem-flow.sketch) • [IRL version](/assets/major-studio-1/problem-flow-irl.jpeg)*
+*[Full size](/assets/major-studio-1/problem-flow.png) • [Sketch](/assets/major-studio-1/problem-flow.sketch) • [IRL version](/assets/major-studio-1/problem-flow-irl.jpeg)*
 
 I feel like we're all familiar with the problems that can arise when opting for the first way of booking meetings. This method is especially unsuitable for professional settings like setting up office or client meetings.
 
 That doesn't mean that the second—I'd argue the most used way—of setting up meetings is perfect. The (context) switches between apps in the bottom half of the image above are especially troubling[^1]. Each time the user switch from application—eg from email to calendar—they need to re-adjust to the user interface which can cause confusion and frustration. Besides, I think most people might do another "pass" back-and-forth to double, and maybe even triple, check they got the dates, locations, and other information right.
+
+#### Existing solution
+
+It's currently possible to schedule meetings in Apple's Calendar based on text by hitting the "+" button in the top left.
+
+![Apple Calendar quick event](/assets/major-studio-1/apple-calendar-quick-event.png)
+
+![Apple Calendar quick event with content](/assets/major-studio-1/apple-calendar-quick-event-with-content.png)
+
+While this feature allows you to quickly schedule meetings, there are a few big problems:
+
+* Only available within calendar
+* Not very smart
+* Doesn't show you other events on that time
+* Doesn't allow you to set any other metadata
+
+After you hit enter, the calendar jumps to the date and selects the just-added item. This switch is not announced in any way and disregards whatever the user was doing in the calendar before.
+
+<video muted autoplay loop src="/assets/major-studio-1/apple-calendar-flow.mov"></video>
 
 ### Design Challenge
 
@@ -44,7 +71,7 @@ How can a email application be extended in a way that allows the user to immedia
 
 ### Stakeholders / Target audience
 
-On the client side there is the original manufacturer of the email application that's being used. For this stakeholder, it's important that the solution coheres to the existing design language and system. It's also important that the solution provides the user with an improved experience which doesn't sit in the way when it's not used.
+On the client side there is the original manufacturer of the calendar application that's being used. For this stakeholder, it's important that the solution coheres to the existing design language and system. It's also important that the solution provides the user with an improved experience which doesn't sit in the way when it's not used.
 
 On the user side, it's quite hard to define a "calendar user" group. This group would contain basically all demographics. This group would become even broader if we rephrase it to "email users".
 
@@ -54,14 +81,106 @@ In order to have a specific sense of who to design this solution for, I'll be fo
 
 I think it's safe to say that as long as there are humans trying to connect with one another, there will be a need for a calendar in some fashion. The same can't be said for email however. The total volume of sent emails has dropped about 10 percent since 2010[^3].
 
+That being said, the biggest threat in this space is the sheer volume of email/calendar apps and integrations out there. It seems like every day a new calendar or email related app releases. Based on Product Hunt alone, there are more than 1,500 different email and calendar apps[^4]!
+
 ## Research
+
+### Use Cases
+
+#### Questions
+* Why might a user need your product?
+* What questions might they have?
+* What other products and solutions might they interact with?
+
+#### Possible Use Cases
+* Schedule meetings
+* Invite other people
+* Manage work time
+* Track time
+* Check if you have something to do on a certain date or time
+* Schedule a meeting with multiple people
+
+#### Questions the user might have
+* Do I have anything to do next Wednesday between 12p & 4p?
+* When can my friends meet up?
+* Where did this meeting come from?
+* How can I do *X*
+* Where is a meeting?
+* How do I get there?
+* Who’s going to be there
+
+#### Other products and solutions
+* Google Calendar
+* doodle.com (datumprikker.nl)
 
 ### Persona's
 
-### Competitor analysis
+Based on my initial desk research into the target audience, I came up with the following hypothetical archetype of my user.
+
+![Persona](/assets/major-studio-1/persona.png)
+*[Full size](/assets/major-studio-1/persona.png) • [Sketch](/assets/major-studio-1/persona.sketch)*
+
+### Project Charter
+
+*We Believe*  
+Users struggle with double bookings when planning meetings
+
+*We Know We're*  
+Right
+
+*When the user*  
+Isn't as agitated when planning meetings as before
+
+### SWOT Analysis MixMax Calendar
+
+Competitor: [MixMax Calendar](https://mixmax.com/calendar)
+
+![](/assets/major-studio-1/swot/calendar_hero.png)
+
+![](/assets/major-studio-1/swot/feature_calendar.png)
+
+#### Strengths
+* Integrations with existing email clients and services (Gmail / iCloud / MS)
+* Calendly like service to setup meetings (main focus)
+* Web based scheduling services doesn’t require other users to download an app
+
+#### Weaknesses
+* Identity crisis  
+  * Is it trying to be a calendar, or just an additional tool?
+* You have to manually select your availability
+* Doesn’t take “outside” calendar events in consideration
+
+#### Opportunities
+* High demand for this kind of service (based on Product Hunt popularity)
+* Added value by adding automation features (like automatic follow ups and reminders)
+
+#### Threats
+* Big calendar providers already provide invite options and might introduce this at a moments notice, completely negating the usefulness of this separate application
+* Existing provider with the exact same feature set: Calendly, Doodle.com
+* Not enough added value for the user to have to install yet another app
+
+## Design 
+
+### Low-fi sketches
+
+#### Prompt
+
+How can we allow users to quickly check, reschedule, and plan at specific times and dates?
+
+How can we provide the user with the same functionality no matter where the user is?
+
+#### Initial sketches
+
+##### Mobile application
+
+![Mobile App sketch](/assets/major-studio-1/sketches/mobile-app.jpg)
+*[Full size](/assets/major-studio-1/sketches/mobile-app.jpg)*
+
+This mobile style interaction would be a nearly empty main screen that would prompt the user to enter a date and time. Based on the entered datetime info, the app would show the availability for that exact timeslot. 
 
 ## Sources
 
 [^1]: Harris, J. (2016, April 5). _The Invisible Problem Wrecking Your Productivity And How To Stop It_. Retrieved from [blog.trello.com](https://blog.trello.com/why-context-switching-ruins-productivity)
 [^2]: Victor Davis Hanson (2010, August 13). _Obama: Fighting the Yuppie Factor_. National Review. Retrieved from [nationalreview.com](https://www.nationalreview.com/2010/08/obama-fighting-yuppie-factor-victor-davis-hanson/)
 [^3]: Pogue, D. (2015, March 1). _Is Messaging Going to Kill E-mail?_. Retrieved from [scientificamerican.com](https://www.scientificamerican.com/article/is-messaging-going-to-kill-e-mail/)
+[^4]: ProductHunt. (n.d.). _Search Results_. Retrieved from [producthunt.com](https://www.producthunt.com/search?all=true&q=calendar)
