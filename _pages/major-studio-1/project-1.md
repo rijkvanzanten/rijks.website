@@ -161,7 +161,7 @@ Competitor: [MixMax Calendar](https://mixmax.com/calendar)
 
 ## Design 
 
-### Low-fi sketches
+### Initial Ideation Sketches
 
 #### Prompt
 
@@ -169,14 +169,40 @@ How can we allow users to quickly check, reschedule, and plan at specific times 
 
 How can we provide the user with the same functionality no matter where the user is?
 
-#### Initial sketches
-
-##### Mobile application
+#### Separate mobile application
 
 ![Mobile App sketch](/assets/major-studio-1/sketches/mobile-app.jpg)
 *[Full size](/assets/major-studio-1/sketches/mobile-app.jpg)*
 
-This mobile style interaction would be a nearly empty main screen that would prompt the user to enter a date and time. Based on the entered datetime info, the app would show the availability for that exact timeslot. 
+This mobile style interaction would be a nearly empty main screen that would prompt the user to enter a date and time. Based on the entered datetime info, the app would show the availability for that exact timeslot.
+
+#### Right click idea
+
+![Right Click](/assets/major-studio-1/sketches/desktop-r-click.jpg)
+*[Full size](/assets/major-studio-1/sketches/mobile-app.jpg)*
+
+In this interaction, the user would select any date anywhere in the system, hit the right mouse button and hit a new "Show in Calendar" (or something along those lines) option. This would then open an overlay on top over the screen showing the add-to-calendar interface.
+
+#### Menubar
+
+![Menubar](/assets/major-studio-1/sketches/menubar.jpg)
+*[Full size](/assets/major-studio-1/sketches/menubar.jpg)*
+
+This could be an alternative way to open the same interface as above. 
+
+#### Nataly's idea
+
+![](/assets/major-studio-1/sketches/nataly.jpeg)
+*[Full size](/assets/major-studio-1/sketches/nataly.jpeg)*
+
+#### Shefali's Idea
+
+![](/assets/major-studio-1/sketches/shefali.jpeg)
+*[Full size](/assets/major-studio-1/sketches/shefali.jpeg)*
+
+#### Conclusion
+
+I think I should focus on creating one interface that can be re-used in all the different ideas seen above. The Apple Calendar "Quick Event" interface could be a good starting point. 
 
 ## Sources
 
