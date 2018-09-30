@@ -8,17 +8,6 @@ layout: page
 
 [Parsons' Course Catalog](https://courses.newschool.edu/courses/PMCD5101/)
 
-## Project 1
+## Projects
 
-### Research
-
-### Low-fi concepts
-
-### System map
-
-### Design System
-
-### High-fi screens
-
-### Prototype
-
+1. [Project 1](./project-1.html)

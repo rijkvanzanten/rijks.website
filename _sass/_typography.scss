@@ -20,9 +20,12 @@
 
 html {
   font-family: "Source Sans Pro", -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  line-height: 1.5;
 }
 
-p { margin-bottom: 1.3em; }
+p {
+  margin-bottom: 1.3em;
+}
 
 h1, h2, h3, h4 {
   font-family: "Source Serif Pro", "Georgia", serif;
@@ -69,3 +72,17 @@ pre {
 a {
   color: currentColor;
 }
+
+.footnotes li:target {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    height: 100%;
+    width: 2px;
+    background-color: $white;
+  }
+}
+

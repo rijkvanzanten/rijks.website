@@ -1,12 +1,13 @@
 .wrapper {
   display: flex;
   padding: 4rem;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 #content {
   padding-right: 2rem;
   padding-top: 2rem;
-  overflow: hidden;
   flex-grow: 1;
 
   @media screen and (max-width: 500px) {
@@ -30,6 +31,10 @@
     background-color: $dark-blue;
     transition: 300ms ease-out;
     transition-properties: transform, box-shadow;
+  }
+
+  @media screen and (min-width: 1400px) {
+    flex-basis: 320px;
   }
 }
 
