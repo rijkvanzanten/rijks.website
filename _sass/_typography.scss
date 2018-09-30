@@ -97,3 +97,10 @@ a[href$=".sketch"]::after {
   }
 }
 
+img + em {
+  display: block;
+}
+
+ul, ol {
+  margin-bottom: 1.3em;
+}
