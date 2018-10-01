@@ -11,3 +11,8 @@ layout: page
 ## Projects
 
 1. [Project 1](./project-1.html)
+
+## Presentations
+
+* [(PDF) Project 1 progress presentation 10/1/2018](/assets/major-studio-1/presentation-1.pdf)
+* [(MD) Project 1 progress presentation 10/1/2018](/assets/major-studio-1/presentation-1.md)
