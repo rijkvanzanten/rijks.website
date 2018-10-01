@@ -204,6 +204,21 @@ This could be an alternative way to open the same interface as above.
 
 I think I should focus on creating one interface that can be re-used in all the different ideas seen above. The Apple Calendar "Quick Event" interface could be a good starting point.
 
+## Flowchart
+
+![Flowchart](/assets/major-studio-1/sketches/flow.jpg)
+
+## Low-fi sketches
+
+![Low-fi](/assets/major-studio-1/sketches/low-fi-001.jpg)
+*[Full size](/assets/major-studio-1/sketches/low-fi-001.jpg)*
+
+![Low-fi](/assets/major-studio-1/sketches/low-fi-002.jpg)
+*[Full size](/assets/major-studio-1/sketches/low-fi-002.jpg)*
+
+![Low-fi](/assets/major-studio-1/sketches/med-fi-001.jpg)
+*[Full size](/assets/major-studio-1/sketches/med-fi-001.jpg)*
+
 ## Sources
 
 [^1]: Harris, J. (2016, April 5). _The Invisible Problem Wrecking Your Productivity And How To Stop It_. Retrieved from [blog.trello.com](https://blog.trello.com/why-context-switching-ruins-productivity)

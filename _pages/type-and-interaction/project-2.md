@@ -69,12 +69,32 @@ Other key points:
 There is quite a complicated mess of fares, rules, discounts, and options you need to take into account when purchasing a MetroCard.
 
 ![Ticket Types](/assets/type-and-interaction/ticket-types.png)
+*[Full Size](/assets/type-and-interaction/ticket-types.png) • [Source](http://web.mta.info/nyct/fare/FaresatAGlance.htm)*
 
-Given, this is more MTA's fault than a problem in this machine in general, but it doesn't make the user flow any easier.
+While this is more a problem in the MTA's fares and tolls, it hinders the interaction with the machine directly, as you need to be familiar with all of the rules in order to use the vending machines well.
 
-All these options and rules combined with some poor choices in user flow result in a fairly big user flow for a seemingly simple interaction:
+### Cumbersome flow
 
-Based on [the interface demo of the original creators](http://www.antennadesign.com/Transit/5-metrocard-vending-machinescrollbar=0) we can see that this used to be way simpler.
+All the above options and rules combined with some poor choices in user flow result in a fairly big user flow for a seemingly simple interaction:
+
+![MTA Flowchart](/assets/type-and-interaction/mta-flowchart.png)
+*[Full Size](/assets/type-and-interaction/mta-flowchart.png) • [Sketch](/assets/type-and-interaction/mta-flowchart.sketch) • [IRL](/assets/type-and-interaction/mta-flowchart.pdf) • [Based on the Times Sq 42 St machine](/assets/type-and-interaction/mta-flowchart-source.pdf)*
+
+After playing around with a vending machine, and creating this, I immediately wondered a few things:
+
+* Why do I have to press start in order to do anything?
+* Why do I have to choose a language? Can't it default to English with the ability to change at any time?
+* Why do I have to choose to refill my MetroCard before I can enter my MetroCard?
+* Why does the card info have to be shown on a separate screen?
+* What's the difference between time and value?
+* Why are the amounts weird?  
+  When you choose to add value, you're presented with options like $26.20 and $20.95. It turns out with those specific amounts you get a bonus that makes the total value equal an _n_ amount of trips. 
+* Do we _need_ receipts?
+
+![Why](/assets/type-and-interaction/why.gif)
+*[Full Size](https://nextcity.org/images/forefront/_resized/why_800.gif) • [Source](https://nextcity.org/features/view/what-is-the-best-way-to-sell-a-train-ticket)*
+
+_Turns out I wasn't the only one wondering about these things. I came across an amazing article that goes in depth on why these things are the way they are. It doesn't explain how to solve them though, so let's move on with the design research._
 
 ## Sources
 
