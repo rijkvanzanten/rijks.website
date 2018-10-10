@@ -94,3 +94,9 @@ https://auchers.github.io/data-visualization-thesis/#/
 https://rikghosh.github.io/thesis/
 
 
+links:
+http://aaronhill.nyc/sxswdataviz.pdf
+http://lostcatbook.com/
+http://aaronhill.nyc/historicdistrict/
+https://rikghosh.github.io/thesis/
+https://ny.curbed.com/2017/10/11/16461458/new-york-subway-map-massimo-vignelli-midtown
