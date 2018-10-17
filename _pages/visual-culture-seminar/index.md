@@ -100,3 +100,40 @@ http://lostcatbook.com/
 http://aaronhill.nyc/historicdistrict/
 https://rikghosh.github.io/thesis/
 https://ny.curbed.com/2017/10/11/16461458/new-york-subway-map-massimo-vignelli-midtown
+
+### More Dataviz
+
+_Daniel_ 
+
+Timeframes are large.
+
+Interactive data installation to balance the big corporation work.
+
+#### On Broadway
+
+Panorama photography is fun when it glitches (like when you're on a moving train).
+
+Project: create a huge panorama of the whole street of broadway
+
+Doing panoramas has a lot of problems: stitching messes up perspective, time of day, different scenes over different days.
+
+Different data layers are possible on the same broadway street: foursquare checkins, tweets, instagram posts, etc.
+
+#### Subspotting
+
+Cell reception on the MTA. 
+
+#### SVA
+
+Being observed is as important as observing
+
+Familiarity between actors increases willingness to share
+
+With innocent objectives in gathering data, you oftentime get access to data you weren't initially looking for.
+
+The example given was the project where the movements of all the students were tracked. This resulted in the added ability to see what students slept with each other. Not data that they were looking for initially, but nonetheless data they got.
+
+#### TEDx talk
+
+To what extent are we willing to give out personal information under the assumption it's anonymous.
+
