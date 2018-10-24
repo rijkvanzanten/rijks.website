@@ -137,3 +137,18 @@ The example given was the project where the movements of all the students were t
 
 To what extent are we willing to give out personal information under the assumption it's anonymous.
 
+### More from the type and interaction lady
+
+Laying out found content in a new way.
+
+Using personal websites for something else than personal work.
+
+Exersize in style
+
+A successful email will: 
+* Be black and white and use typography only
+* Use your chosen found text
+* Show form that is related to your content
+* Be memorable, maybe surprising
+
+This was a particularily useless exercise. I don't understand why it's going to help me in any way. I wish I didn't come to this session.
