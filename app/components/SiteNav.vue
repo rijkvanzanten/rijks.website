@@ -7,17 +7,14 @@
 				/about
 			</SiteLink>
 
-			<SiteLink to="/talks">
-				/talks
-			</SiteLink>
-
-			<SiteLink to="/posts">
-				/posts
-			</SiteLink>
-
 			<SiteLink to="/uses">
 				/uses
 			</SiteLink>
+
+			<div class="mt-4">
+				<a class="block" href="https://github.com/rijkvanzanten">GitHub</a>
+				<a class="block" href="https://www.linkedin.com/in/rijkvanzanten/">LinkedIn</a>
+			</div>
 		</nav>
 	</div>
 </template>
