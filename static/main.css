@@ -1,0 +1,14 @@
+:root {
+	--color-fg: #000;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	max-width: 45rem;
+	margin: 0 auto;
+}
