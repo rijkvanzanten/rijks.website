@@ -1,3 +1,3 @@
-# rijk.nyc
+# rijks.website
 
-Repo for my personal website: https://rijk.nyc
+Repo for my personal website: https://rijks.website
