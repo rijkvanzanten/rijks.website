@@ -1,6 +1,130 @@
-:root {
-	--color-fg: #000;
+/* Temp grid for checking vertical rhythm */
+
+body {
+	position: relative;
 }
+
+body::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: 9999;
+	background: linear-gradient(180deg, #c8e1ff99 1px, transparent 1px);
+	background-size: 20px var(--rhythm);
+	pointer-events: none;
+	opacity: 1;
+}
+
+/* =================================================================================================
+   Fonts / external sources */
+@font-face {
+	font-family: "Amarante";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(/fonts/amarante.woff2) format("woff2");
+	unicode-range:
+		U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+		U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+	font-family: "Noto Serif";
+	font-style: normal;
+	font-weight: 100 900;
+	font-stretch: 100%;
+	font-display: swap;
+	src: url(/fonts/noto-serif.woff2) format("woff2");
+	unicode-range:
+		U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+		U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+	font-family: "Noto Serif";
+	font-style: italic;
+	font-weight: 100 900;
+	font-stretch: 100%;
+	font-display: swap;
+	src: url(/fonts/noto-serif-italic.woff2) format("woff2");
+	unicode-range:
+		U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+		U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+	font-family: "Triplicate A Poly";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(/fonts/triplicate-a-poly-400-normal.woff2) format("woff2");
+}
+
+@font-face {
+	font-family: "Triplicate A Poly";
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url(/fonts/triplicate-a-poly-700-normal.woff2) format("woff2");
+}
+
+@font-face {
+	font-family: "Triplicate A Poly";
+	font-style: italic;
+	font-weight: 400;
+	font-display: swap;
+	src: url(/fonts/triplicate-a-poly-400-italic.woff2) format("woff2");
+}
+
+@font-face {
+	font-family: "Triplicate A Poly";
+	font-style: italic;
+	font-weight: 700;
+	font-display: swap;
+	src: url(/fonts/triplicate-a-poly-700-italic.woff2) format("woff2");
+}
+
+/* =================================================================================================
+   Variables / helper classes */
+
+:root {
+	--color-fg: #333;
+	--color-bg: #fff9f0;
+	--grid-col-gap: 2rem;
+	--rhythm: 1rlh;
+
+	@media (prefers-color-scheme: dark) {
+		--color-fg: #fff9f0;
+		--color-bg: #111;
+	}
+}
+
+@property --left-fade {
+	syntax: "<length>";
+	inherits: false;
+	initial-value: 0px;
+}
+
+@property --right-fade {
+	syntax: "<length>";
+	inherits: false;
+	initial-value: 2rem;
+}
+
+@keyframes overflow-fade {
+	from {
+		--left-fade: 0px;
+		--right-fade: 2rem;
+	}
+
+	to {
+		--left-fade: 2rem;
+		--right-fade: 0px;
+	}
+}
+
+/* =================================================================================================
+   Reset */
 
 *,
 *::before,
@@ -8,7 +132,265 @@
 	box-sizing: border-box;
 }
 
+img,
+pre,
+figure {
+	max-width: 100%;
+}
+
+figure {
+	margin: 0;
+}
+
+pre {
+	overflow-x: auto;
+}
+
+a {
+	color: currentColor;
+}
+
+/* =================================================================================================
+   Base Typography */
+
+:root {
+	font-size: clamp(1rem, 0.9rem + 0.5vw, 1.125rem);
+	line-height: round(nearest, 1.5em, 1px);
+	font-family: "Noto Serif", serif;
+	hyphens: auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-size: 100%;
+	font-family: "Amarante", serif;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ol,
+ul,
+li {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-size: 2.8rem;
+	line-height: calc(var(--rhythm) * 2);
+}
+
+h2 {
+	font-size: 1.5rem;
+	line-height: var(--rhythm);
+}
+
+h3 {
+	font-size: 1.25rem;
+	line-height: var(--rhythm);
+}
+
+code,
+pre {
+	font-family: "Triplicate A Poly", monospace;
+	tab-size: 3;
+}
+
+aside {
+	font-size: 0.875rem;
+	line-height: var(--rhythm);
+}
+
+ul,
+ol {
+	padding-left: 1rem;
+}
+
+/* =================================================================================================
+   Base */
+
 body {
-	max-width: 45rem;
 	margin: 0 auto;
+	padding: var(--rhythm) 1rem;
+	color: var(--color-fg);
+	background-color: var(--color-bg);
+	display: grid;
+	grid-template-columns: repeat(12, minmax(0, 1fr));
+	gap: calc(var(--rhythm) * 2) var(--grid-col-gap);
+	max-width: 80rem;
+
+	@media (width > 46rem) {
+		padding: calc(var(--rhythm)) 1rem;
+	}
+}
+
+/* =================================================================================================
+   Navigation */
+
+#navigation {
+	grid-column: 1 / -1;
+	display: grid;
+	grid-template-columns: subgrid;
+
+	#logo {
+		display: block;
+		grid-column: 1 / span 3;
+		height: calc(var(--rhythm) * 3);
+		width: max-content;
+
+		svg {
+			height: 100%;
+			fill-rule: evenodd;
+			clip-rule: evenodd;
+			stroke-linejoin: round;
+			stroke-miterlimit: 1.41421;
+		}
+
+		path {
+			fill: var(--color-fg);
+			fill-rule: nonzero;
+		}
+	}
+
+	ul {
+		grid-column: span 9;
+		list-style: none;
+		display: grid;
+		height: max-content;
+		gap: var(--rhythm) 0;
+		grid-template-columns: subgrid;
+		grid-template-rows: none;
+		grid-auto-rows: var(--rhythm);
+		align-items: end;
+	}
+
+	li {
+		grid-column: span 3;
+		line-height: var(--rhythm);
+		text-box: trim-both cap alphabetic;
+	}
+}
+
+/* =================================================================================================
+   Content */
+
+#content {
+	min-width: 0;
+	grid-column: 1 / span 12;
+	display: grid;
+	grid-template-columns: subgrid;
+
+	& > * {
+		margin-block: 0;
+		grid-column: 1 / -1;
+	}
+
+	& > :is(h1, h2, h3, h4, blockquote, ul, ol, p:not(:has(img))) {
+		text-box: trim-both cap alphabetic;
+		margin-top: calc(var(--rhythm) * 2 - 1cap);
+	}
+
+	& > :is(h1, h2):not(:first-child) {
+		margin-top: calc(var(--rhythm) * 4 - 1cap);
+	}
+
+	& > :is(h3, h4):not(:first-child) {
+		margin-top: calc(var(--rhythm) * 3 - 1cap);
+	}
+
+	& > :is(figure, p) > img {
+		display: block;
+		width: 100%;
+		object-fit: cover;
+		height: calc-size(auto, round(nearest, size, var(--rhythm)));
+	}
+
+	& > p > :is(img, table) {
+		margin-top: var(--rhythm);
+	}
+
+	& > figure {
+		margin-top: var(--rhythm);
+
+		figcaption {
+			text-box: trim-both cap alphabetic;
+			margin-top: 1cap;
+			text-wrap: balance;
+		}
+	}
+
+	& > pre {
+		margin-top: calc(var(--rhythm) * 2 - 1cap);
+		padding: 0 1rem var(--rhythm);
+		overflow-x: auto;
+		hyphens: none;
+
+		code {
+			display: block;
+			line-height: var(--rhythm);
+			white-space: break-spaces;
+			overflow-wrap: anywhere;
+			text-box: trim-both cap alphabetic;
+		}
+
+		.giallo-l {
+			display: inline;
+		}
+	}
+
+	& > table {
+		margin-top: var(--rhythm);
+		display: block;
+		overflow-x: auto;
+		width: max-content;
+		max-width: 100%;
+		border-collapse: collapse;
+		mask-image: linear-gradient(
+			to right,
+			transparent,
+			black var(--left-fade),
+			black calc(100% - var(--right-fade)),
+			transparent
+		);
+		animation: overflow-fade linear both;
+		animation-timeline: scroll(self inline);
+
+		th,
+		td {
+			box-shadow: inset 0 0 0 1px var(--color-fg);
+			min-width: 10rem;
+			white-space: nowrap;
+			padding: calc(var(--rhythm) / 2) 0.6rem;
+		}
+	}
+
+	& > hr {
+		margin-top: calc(var(--rhythm) * 4);
+		margin-inline: 0;
+		width: 100%;
+		height: var(--rhythm);
+		position: relative;
+		border: none;
+
+		&::after {
+			content: "";
+			width: 100%;
+			height: 1px;
+			background-color: black;
+			position: absolute;
+			top: 50%;
+			left: 0;
+		}
+	}
 }

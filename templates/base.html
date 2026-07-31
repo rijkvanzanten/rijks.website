@@ -3,13 +3,19 @@
 
 <head>
 	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>Rijk's Website</title>
 	<link rel="stylesheet" href="/main.css" />
+	<link rel="stylesheet" href="/syntax-highlighting.css" />
+	<script defer src="/polyfill.js"></script>
 </head>
 
 <body>
-	{% include "partials/header.html" %}
-	{% block content %} {% endblock content %}
+	{% include "partials/navigation.html" %}
+
+	<main id="content">
+		{% block content %} {% endblock content %}
+	</main>
 </body>
 
 </html>
