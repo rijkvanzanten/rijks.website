@@ -12,7 +12,6 @@ body::after {
 	background: linear-gradient(180deg, #c8e1ff99 1px, transparent 1px);
 	background-size: 20px var(--rhythm);
 	pointer-events: none;
-	opacity: 1;
 }
 
 /* =================================================================================================
@@ -96,6 +95,14 @@ body::after {
 	@media (prefers-color-scheme: dark) {
 		--color-fg: #fff9f0;
 		--color-bg: #111;
+	}
+
+	@media (width > 46rem) {
+		--grid-col-gap: 3rem;
+	}
+
+	@media (width > 60rem) {
+		--grid-col-gap: 4rem;
 	}
 }
 
@@ -231,7 +238,7 @@ body {
 	max-width: 80rem;
 
 	@media (width > 46rem) {
-		padding: calc(var(--rhythm)) 1rem;
+		padding: calc(var(--rhythm) * 2) 1rem;
 	}
 }
 
@@ -279,6 +286,31 @@ body {
 		grid-column: span 3;
 		line-height: var(--rhythm);
 		text-box: trim-both cap alphabetic;
+	}
+
+	@media (width > 46rem) {
+		display: block;
+		grid-column: span 3;
+		grid-row: 1;
+		text-align: right;
+
+		#logo,
+		ul {
+			grid-column: 1 / -1;
+		}
+
+		#logo {
+			margin-left: auto;
+			height: calc(var(--rhythm) * 4);
+			margin-top: -1rlh;
+			margin-right: -0.8rem;
+			margin-bottom: 2rlh;
+		}
+
+		ul {
+			display: grid;
+			grid-auto-rows: var(--rhythm);
+		}
 	}
 }
 
@@ -391,6 +423,28 @@ body {
 			position: absolute;
 			top: 50%;
 			left: 0;
+		}
+	}
+
+	@media (width > 46rem) {
+		grid-column: span 9;
+		grid-row: 1;
+		align-content: start;
+
+		& > :is(h1, h2):first-child {
+			margin-bottom: 2rlh;
+		}
+	}
+
+	@media (width > 60rem) {
+		& > :is(h1, h2, h3, h4, blockquote, ul, ol, p:not(:has(img))) {
+			grid-column: 1 / span 7;
+		}
+	}
+
+	@media (width > 70rem) {
+		& > :is(h1, h2, h3, h4, blockquote, ul, ol, p:not(:has(img))) {
+			grid-column: 1 / span 6;
 		}
 	}
 }
