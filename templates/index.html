@@ -2,4 +2,13 @@
 
 {% block content %}
 {{ section.content | safe }}
+
+<h2>Newest Posts</h2>
+{% set blog = get_section(path="blog/_index.md") %}
+<ul>
+	{% for post in blog.pages | slice(end=5) %}
+	<li><a href="{{ post.permalink | safe }}">{{ post.title }}</a></li>
+	{% endfor %}
+</ul>
+
 {% endblock content %}
