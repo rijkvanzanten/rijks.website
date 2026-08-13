@@ -1,2 +1,0 @@
-products vs projects
-scale

@@ -8,6 +8,7 @@ template: "default.html"
 https://rijks.website is edited and produced by [Rijk van Zanten](/contact).
 
 <img
+	id="headshot"
 	sizes="(max-width: 1400px) 100vw, 1400px"
 	srcset="
 		/assets/headshot,w_200.jpg 200w,
@@ -21,7 +22,7 @@ https://rijks.website is edited and produced by [Rijk van Zanten](/contact).
 
 ## Website Stack
 
-This website is hand written in <abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="Cascading StyleSheets">CSS</abbr>, and JavaScript, with a sprinkle of [Tera](https://keats.github.io/tera/) for templating. It uses [Zola](https://www.getzola.org) as static site generator and is hosted on [Netlify](https://www.netlify.com). The source code is [Open Source](https://opensource.org/osd) and can be found on [rijkvanzanten/rijks.website](https://github.com/rijkvanzanten/rijks.website)
+This website is hand written in <abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="Cascading StyleSheets">CSS</abbr>, and JavaScript, with a sprinkle of [Tera](https://keats.github.io/tera/) for templating. It uses [Zola](https://www.getzola.org) as static site generator and is hosted on [Cloudflare](https://www.cloudflare.com). The source code is [Open Source](https://opensource.org/osd) and can be found on [rijkvanzanten/rijks.website](https://github.com/rijkvanzanten/rijks.website)
 
 ## Typography
 
@@ -42,14 +43,13 @@ Also make sure to visit [uses.tech](https://uses.tech)! Checking out what other 
 - [Zed](https://zed.dev) is my daily editor of choice after having used [VS Code](https://code.visualstudio.com) for years
 - [Ghostty](https://ghostty.org) as my terminal emulator
 - I recently switched back to using (a more sane) [Lilex](https://fonts.google.com/specimen/Lilex) after years of using [Triplicate](https://mbtype.com/fonts/triplicate/) as my coding font
-- I use a tab-size of 3. Yes, that might make me a psychopath. It's also [why tabs are better than spaces](/blog/tabs-are-better-than-spaces.md).
-- [Codex](https://chatgpt.com/codex/) is the agentic AI harness I use, using my [rolling wave engineering](https://github.com/rijkvanzanten/rolling-wave-engineering) skills to wrangle the bastard into doing what I need it to. I find myself usually using it for “obvious” things (like mechanical refactors etc) with strict reviews, while doing new creative work by hand
+- I use a tab-size of 3. Yes, that might make me a psychopath. It's also [why tabs are better than spaces](/blog/260612a-tabs-are-better-than-spaces).
+- [Codex](https://chatgpt.com/codex/) is the agentic AI harness I use, using my [rolling wave engineering](https://github.com/rijkvanzanten/rolling-wave-engineering) skills to wrangle the bastard into doing what I need it to. I find myself usually using it for “obvious” things (like mechanical refactors etc) with strict reviews, while doing new creative work by hand
 
 ### Other Software
 
-- After having used the now abandoned [Arc](https://arc.net) for years, I switched back to Safari after updating to macOS 27
-- I have [Google Meet](https://meet.google.com) installed as a <abbr title="progressive web app">PWA</abbr> from Chrome, as that's the only thing that still (!) doesn't play nice in Safari
-- In an attempt to save some <abbr title="random access memory">RAM</abbr>, I very recently switched to using Notion/Linear/Slack in Safari rather than having them as separate (memory hungry) Electron apps
+- After having used the now abandoned [Arc](https://arc.net) for years, I switched to Helium
+- In an attempt to save some <abbr title="random access memory">RAM</abbr>, I very recently switched to using Notion/Linear/Slack in Safari rather than having them as separate (memory hungry) Electron apps
 
 ### Video Recording
 

@@ -313,9 +313,9 @@ a[href^="https://github.com/"]::before {
 		#logo {
 			margin-left: auto;
 			height: calc(var(--rhythm) * 4);
-			margin-top: -1rlh;
+			transform: translateY(-1rlh);
 			margin-right: -0.8rem;
-			margin-bottom: 2rlh;
+			margin-bottom: 1rlh;
 		}
 
 		ul {
@@ -349,7 +349,7 @@ a[href^="https://github.com/"]::before {
 	}
 
 	& > h1:first-child {
-		margin-top: calc(var(--rhythm) * 3 - 1cap);
+		margin-top: calc(var(--rhythm) * 2 - 1cap);
 	}
 
 	& > :is(figure, p) > img {
@@ -448,14 +448,24 @@ a[href^="https://github.com/"]::before {
 	}
 
 	@media (width > 60rem) {
-		& > :is(h1, h2, h3, h4, blockquote, ul, ol, p:not(:has(img))) {
+		& > :is(blockquote, ul, ol, p:not(:has(img))) {
 			grid-column: 1 / span 7;
 		}
 	}
 
 	@media (width > 70rem) {
-		& > :is(h1, h2, h3, h4, blockquote, ul, ol, p:not(:has(img))) {
+		& > :is(blockquote, ul, ol, p:not(:has(img))) {
 			grid-column: 1 / span 6;
 		}
 	}
+}
+
+body > footer {
+	grid-column: 4 / span 9;
+	opacity: 0.5;
+}
+
+#headshot {
+	margin-top: 1rlh;
+	max-width: 9rlh;
 }
