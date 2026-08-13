@@ -1,6 +1,6 @@
 ---
 title: "Tabs are better than spaces"
-date: 2026-08-09
+date: 2026-08-12
 ---
 
 The discussion of whether to use tabs or spaces for code indentation has been going on for longer than I've been alive. Even in written styleguides from [as early as the mid-eighties](https://archive.adaic.com/docs/style-guide/83style/html/sty-02-02.html) you can find references to the "Use spaces for indentation, not the tab character".
